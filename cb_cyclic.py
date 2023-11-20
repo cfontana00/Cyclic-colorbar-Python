@@ -35,10 +35,10 @@ fig = plt.figure()
 ax = plt.subplot(111, polar=True)
 
 
-N = 480            # Number of lines to draw color bar
-Ntick = 12         # Number of ticks ( 6 / 12 / 24 / 48 ....)
-ymin = 0.75        # Lower boundary of cb
-ymax = 0.95        # Upper boundary of cb
+N = 480            # Number of lines to draw color bar ( 480 / 960 ...)
+Ntick = 12         # Number of ticks ( 6 / 12 / 24 / 48 ...)
+ymin = 0.75        # Lower boundary of cb < ymax
+ymax = 0.95        # Upper boundary of cb < 1
 tick_size = 0.03   # Ticks size 
 
 
@@ -95,10 +95,3 @@ plt.close()
 
 
 
-
-
-
-
-
-
-        
