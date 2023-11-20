@@ -16,9 +16,12 @@ from matplotlib.colors import ListedColormap
 # Load color map
 # -------------
 cmap_name = matplotlib.cm.hsv
+#cmap_name = matplotlib.cm.twilight
+
 rgb=[]
 
-for i in range(0,256):
+
+for i in range(0,cmap_name.N):
   rgb.append(cmap_name(i))
 
 rgb=np.array(rgb)
@@ -36,7 +39,7 @@ N = 480            # Number of lines to draw color bar
 Ntick = 12         # Number of ticks ( 6 / 12 / 24 / 48 ....)
 ymin = 0.75        # Lower boundary of cb
 ymax = 0.95        # Upper boundary of cb
-tick_size = 0.01   # Ticks size 
+tick_size = 0.03   # Ticks size 
 
 
 # Define angles
